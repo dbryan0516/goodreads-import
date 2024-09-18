@@ -18,11 +18,14 @@ BookID,Title,Author,Author l-f,Additional Authors,ISBN,ISBN13,My Rating,Average 
 
 ## Usage
 
-1. Export your GoodReads library as a CSV file using [GoodReads Export](https://www.goodreads.com/review/import)
-2. Place the CSV file in the root directory.
-3. Create a `.env` file, copy the contents of the `.env.example` file and fill in your values.
-4. Run the script via `npm start`.
-5. The script logs status messages to the console and outputs a file `output.csv` which is the input file plus additional fields.
+1. Clone the repo. Create a `.env` file, copy the contents of the `.env.example` file and fill in your values.
+- `BASE_URL` the url you use to access LazyLibrarian. Likely http://localhost:5299 or http://192.168.X.X:5299
+- `API_KEY` LazyLibrarian settings under Config > Interface > Startup. Enable API and Generate an API key and SAVE.
+2. Export your GoodReads library as a CSV file using [GoodReads Export](https://www.goodreads.com/review/import)
+3. Place the CSV file in the root directory.
+4. Run `npm install` to install the packages needed for the script.
+5. Run the script via `npm start`.
+6. The script logs status messages to the console and outputs a file `output.csv` which is the input file plus additional fields.
 
 ## Requirements
 
