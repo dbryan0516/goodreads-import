@@ -4,7 +4,11 @@ This project provides a script to import books marked as "To Read" on GoodReads 
 
 ## How it works
 
-The script reads a CSV file exported from GoodReads, filters for the books marked as "To Read", and prepares them for import into LazyLibrarian.
+The script reads a CSV file exported from GoodReads, filters for the books marked as "To Read", and sends them for import into LazyLibrarian. If a "To Read" book is already in LazyLibrarian and marked as "Skipped", this script will mark it as "Wanted". After it has finished processing the file, it will send a forceBookSearch command to LL, making it start searching for all books marked "Wanted" immediately. 
+
+LazyLibrarian defaults newly added books through the API as "Skipped". You can change this to "Wanted" in the settings.
+
+
 
 The CSV file should be in the following format (Standard GoodReads Export as of 9/16/2024):
 
